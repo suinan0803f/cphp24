@@ -40,7 +40,7 @@
     <!-- <meta name="twitter:image" content="(5)画像のURL" /> -->
 
     <!-- タブのタイトルをつける -->
-    <title id="topoftop">ニシ自動車鈑金ホームページ</title>
+    <title>ニシ自動車鈑金ホームページ</title>
 
     <!-- SEO対策 -->
 
@@ -65,8 +65,10 @@
     <link rel="shortcut icon" href="./asset/img/westAutumnlogo_16x16.png" type="image/png"/>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./asset/materialize/css/materialize.min.css"/>
+    <!-- <link rel="stylesheet" href="./asset/materialize/css/materialize.min.css"/> -->
+
     <link rel="stylesheet" href="./asset/aos-master/dist/aos.css"/>
+    <link rel="stylesheet" href="./asset/css/g_style.css"/>
     <link rel="stylesheet" href="./asset/css/style.css" type="text/css" media="screen"/>
     <!-- <link rel="stylesheet" href="./asset/bxslider/css/jquery.bxslider.css"> -->
 
@@ -89,113 +91,17 @@
     <header>
         <div class="navbar-fixed">
             <nav role="navigation" class="">
-                <div class="nav-wrapper adjust">
-                    <a href="./index.html" id="logo-container" class="brand-logo" aria-label="Link to ns_autumn.com">
-                        <!-- <img src="./asset/IMG/main_logo_s_w_trans.png" alt="logo"> -->
-                        <!-- svgで図形をかいてみる -->
-                        <svg id="exportSVG" style="isolation: isolate; left: 0;" visibility="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-info="draw.ninja" data-name="westAutumnlogo" viewBox="0 0 100 100" width="100" height="100" style="position: fixed; top: 0px; left: 0px;">
-                            <defs id="defsExport">
-                                <filter id="filter0">
-                                    <feGaussianBlur stdDeviation="0"></feGaussianBlur>
-                                </filter>
-                                <pattern id="patternImage" patternUnits="userSpaceOnUse" x="0" y="0" width="1" height="1" data-x="0" data-y="0" data-width="1" data-height="1" data-multx="1" data-multy="1" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="patternImage" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                </pattern>
-                                <pattern id="pattern0" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 0" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 0 L5 0 L5 5 L0 5 L0 0 Z">
-                                    </path>
-                                </pattern>
-                                <pattern id="pattern1" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 1" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 5 L5 0 L10 5 L5 10 L0 5 Z"></path>
-                                </pattern>
-                                <pattern id="pattern2" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 2" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 9 L5 1 L10 9 L0 9 Z"></path>
-                                </pattern>
-                                <pattern id="pattern3" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 3" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 5 C0 2.25 2.25 0 5 0 C7.75 0 10 2.25 10 5 C10 7.75 7.75 10 5 10 C2.25 10 0 7.75 0 5 Z"></path>
-                                </pattern>
-                                <pattern id="pattern4" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 4" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 5 L4 4 L5 0 L6 4 L10 5 L6 6 L5 10 L4 6 L0 5 Z"></path>
-                                </pattern>
-                                <pattern id="pattern5" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 5" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M5 10 C-5 2.75 3 -1.75 5 1 C7 -1.75 15 2.75 5 10 Z"></path>
-                                </pattern>
-                                <pattern id="pattern6" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 6" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M3 0 L7 0 L7 10 L3 10 L3 0 Z"></path>
-                                </pattern>
-                                <pattern id="pattern7" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 7" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M10 3 L10 7 L0 7 L0 3 L10 3 Z"></path>
-                                </pattern>
-                                <pattern id="pattern8" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 8" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 10 L3 3 L10 0 L7 7 L0 10 Z"></path>
-                                </pattern>
-                                <pattern id="pattern9" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" data-x="0" data-y="0" data-width="10" data-height="10" data-multx="1" data-multy="1" stroke="none" patternTransform="matrix(1,0,0,1,0,0)" data-transs="0" data-transf="0" data-source="Pattern 9" data-draw="1" fill="#B3B3B3" fill-opacity="1">
-                                    <path transform="matrix(1,0,0,1,0,0)" d="M0 4 L10 4 L10 6 L0 6 L0 4 Z M4 10 L4 0 L6 0 L6 10 L4 10 Z"></path>
-                                </pattern>
-                                <linearGradient id="linearSystem" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="100%" y2="50%" spreadMethod="pad">
-                                    <stop offset="50%" stop-color="#D0D0D0" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="transparent" stop-opacity="1"></stop>
-                                </linearGradient>
-                                <linearGradient id="linearSystem1" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="100%" y2="50%" spreadMethod="pad">
-                                    <stop offset="30%" stop-color="#D0D0D0" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="transparent" stop-opacity="1"></stop>
-                                </linearGradient>
-                                <linearGradient id="linearSystem2" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="50%" y2="50%" spreadMethod="repeat">
-                                    <stop offset="30%" stop-color="#D0D0D0" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="transparent" stop-opacity="1"></stop>
-                                </linearGradient>
-                                <linearGradient id="linearSystem3" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="50%" y2="50%" spreadMethod="reflect">
-                                    <stop offset="30%" stop-color="#D0D0D0" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="transparent" stop-opacity="1"></stop>
-                                </linearGradient>
-                                <radialGradient id="radialSystem" gradientUnits="objectBoundingBox" r="0.5" cx="0.5" fx="0.5" cy="0.5" fy="0.5" spreadMethod="pad">
-                                    <stop offset="50%" stop-color="#D0D0D0" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="transparent" stop-opacity="1"></stop>
-                                </radialGradient>
-                                <pattern id="patternSystem" patternUnits="userSpaceOnUse" x="0" y="0" width="6" height="8">
-                                    <path stroke="#D0D0D0" stroke-width="5" fill="none" d="M0 0 L0 10"></path>
-                                </pattern>
-                                <linearGradient id="linear0" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="100%" y2="50%" spreadMethod="pad">
-                                    <stop offset="0%" stop-color="#FF8000" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="#FFFF00" stop-opacity="1"></stop>
-                                </linearGradient>
-                                <linearGradient id="linear1" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="100%" y2="50%" spreadMethod="pad">
-                                    <stop offset="0%" stop-color="#FFFF00" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="#FF8000" stop-opacity="1"></stop>
-                                </linearGradient>
-                                <linearGradient id="linearImport" gradientUnits="objectBoundingBox" x1="0%" y1="50%" x2="100%" y2="50%" spreadMethod="pad">
-                                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.1"></stop>
-                                    <stop offset="100%" stop-color="#000000" stop-opacity="0.1"></stop>
-                                </linearGradient>
-                                <radialGradient id="radial0" gradientUnits="objectBoundingBox" r="0.5" cx="0.5" fx="0.5" cy="0.5" fy="0.5" spreadMethod="pad">
-                                    <stop offset="0%" stop-color="#FF8000" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="#FFFF00" stop-opacity="1"></stop>
-                                </radialGradient>
-                                <radialGradient id="radial1" gradientUnits="objectBoundingBox" r="0.5" cx="0.5" fx="0.5" cy="0.5" fy="0.5" spreadMethod="pad">
-                                    <stop offset="0%" stop-color="#FFFF00" stop-opacity="1"></stop>
-                                    <stop offset="100%" stop-color="#FF8000" stop-opacity="1"></stop>
-                                </radialGradient>
-                                <radialGradient id="radialImport" gradientUnits="objectBoundingBox" r="0.5" cx="0.5" fx="0.5" cy="0.5" fy="0.5" spreadMethod="pad">
-                                    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.1"></stop>
-                                    <stop offset="100%" stop-color="#000000" stop-opacity="0.1"></stop>
-                                </radialGradient>
-                            </defs>
-                            <rect id="pageExport" x="0" y="0" width="100" height="100" fill="none" fill-opacity="0" stroke="none" stroke-width="0">
-                            </rect>
-                            <g id="objectsExport" visibility="visible">
-                                
-                                <path id="path10" visibility="visible" stroke="#800080" stroke-width="5" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" marker-start="none" marker-end="none" fill="none" fill-rule="evenodd" fill-opacity="1" data-name="curve" data-title="curve" deg="0" data-sw="5" data-grad="0" data-group="0" data-edit="1" filter="none" d="M93.125 83.125 L7.625 84.125 " data-centerx="50.375" data-centery="83.625"></path>
-                                <path id="path11" visibility="visible" stroke="#FF8000" stroke-width="5" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" marker-start="none" marker-end="none" fill="none" fill-rule="evenodd" fill-opacity="1" data-name="curve" data-title="curve" deg="0" data-sw="5" data-grad="0" data-group="0" data-edit="1" filter="none" d="M48.821 57.755 C48.821 67.845 40.367 76.104 30.036 76.104 C19.705 76.104 11.252 67.845 11.252 57.755 C11.252 47.662 19.705 39.408 30.036 39.408 C40.367 39.408 48.821 47.662 48.821 57.755 " data-centerx="30.032" data-centery="57.753"></path>
-                                <path id="path16" visibility="visible" stroke="#0080FF" stroke-width="5" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" marker-start="none" marker-end="none" fill="none" fill-rule="evenodd" fill-opacity="1" data-name="curve" data-title="curve" deg="44" data-sw="5" data-grad="0" data-group="0" data-edit="1" filter="none" d="M39.313 13.534 L61.147 34.615 L39.8 56.717 L17.966 35.632 L39.313 13.534 " data-centerx="39.558" data-centery="35.13"></path>
-                                
-                                
-                                <path id="path21" visibility="visible" stroke="#FF8080" stroke-width="5" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" marker-start="none" marker-end="none" fill="none" fill-rule="evenodd" fill-opacity="1" data-name="curve" data-title="curve" deg="0" data-sw="5" data-grad="0" data-group="0" data-edit="1" filter="none" d="M67.821 58.005 C67.821 68.095 59.367 76.354 49.036 76.354 C38.705 76.354 30.252 68.095 30.252 58.005 C30.252 47.912 38.705 39.658 49.036 39.658 C59.367 39.658 67.821 47.912 67.821 58.005 " data-centerx="49.032" data-centery="58.003"></path>
-                                <path id="path110" visibility="visible" stroke="#800080" stroke-width="5" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none" marker-start="none" marker-end="none" fill="none" fill-rule="nonezero" fill-opacity="1" data-name="curve" data-title="curve" deg="0" data-sw="5" data-grad="0" data-group="0" data-edit="1" filter="none" d="M85.267 95.333 L85.833 5.5 L73.833 32.167 L94.5 32.167 " data-centerx="84.167" data-centery="50.417"></path></g><g id="settings" visibility="hidden" data-dn0="primalDraw" data-dn1="#FAFAFA" data-dn2="#D2D2D2" data-dn3="18" data-dn4="#800080" data-dn5="#B3B3B3" data-dn6="1" data-dn7="1" data-dn8="5" data-dn9="round" data-dn10="round" data-dn11="none" data-dn12="none" data-dn13="none" data-dn14="nonezero" data-dn15="10" data-dn16="1" data-dn17="100" data-dn18="100" data-dn19="10" data-dn20="0" data-dn21="0" data-dn22="0" data-dn23="111" data-dn24="path10,path11,path16,path21,path110" data-dn25="5" data-dn26="url(#linear0)" data-dn27="url(#linear1)" data-dn28="url(#radial0)" data-dn29="url(#radial1)" data-dn30="#FF8000" data-dn31="#FFFF00" data-dn32="#000000" data-dn33="1" data-dn34="2" data-dn35="11" data-dn36="" data-dn37="0" data-dn38="67">
-                            </g>
-                        </svg>
+                <div class="nav-wrapper">
+                    <a href="./index.php" id="logo-container" class="brand-logo" aria-label="Link to ns_autumn.com">
+                        <img src="./asset/IMG/ニシ自動車鈑金ロゴ_short01.png" alt="logo" class="main-logo">
                     </a>
-                    <a href="#" data-target="slide-out" class="sidenav-trigger">
-                        <i class="material-icons led-color-of-icon">menu</i>
-                    </a>
+                    <!-- <a href="#" data-target="slide-out" id="sidenav-trigger" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a> -->
+                    <button id="sidenav-trigger" type="button" class="sidenav-trigger" aria-controls="sidenav" aria-expanded="false">
+                        <span class="sidenav-trigger-line"></span>
+                        <span class="sidenav-trigger-text"></span>
+                    </button>
 
                     <!-- PCブラウザ用 -->
                     <ul class="right hide-on-med-and-down">
@@ -220,38 +126,39 @@
             </nav>
         </div>
         <!-- スマホ・タブレット用 -->
-        <ul id="slide-out" class="sidenav right-aligned">
-            <li><a href="#" class="scroll-to-top-li">トップ</a></li>
-            <li><a href="" >お知らせ</a></li>
-            <li>
-                <ul class="collapsible collapsible-accordion">
-                    <li>
-                        <a class="collapsible-header">
-                            サービス内容<i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                        <div class="collapsible-body">
-                            <ul>
-                                <li><a href="">鈑金/塗装</a></li>
-                                <li><a href="">溶接</a></li>
-                                <li><a href="">塗料販売</a></li>
-                                <li><a href="">代車無料</a></li>
+        <div class="sidenav-area js-nav-area" id="navigation">
+            <nav id="sidenav" class="sidenav">
+                <ul id="slide-out" class="sidenav-list">
+                    <li><a href="#" class="sidenav-link">トップ</a></li>
+                    <li><a href="#" class="sidenav-link">お知らせ</a></li>
+                    <li>           
+                        <button type="button" class="sidenav-link -accordion sidenav-accordion-trigger" aria-expanded = 'false' aria-controls="accordion1">
+                            サービス内容
+                        </button>
+                        <div id="accordion1" class="accordion sidenav-link">
+                            <ul class="sidenav-accordion-list">
+                                <li><a href="#" class="sidenav-accordion-link">鈑金/塗装</a></li>
+                                <li><a href="#" class="sidenav-accordion-link">溶接</a></li>
+                                <li><a href="#" class="sidenav-accordion-link">塗料販売</a></li>
+                                <li><a href="#" class="sidenav-accordion-link">代車無料</a></li>
                             </ul>
                         </div>
                     </li>
+                    <li><a href="#" class="sidenav-link">塗料の販売</a></li>
+                    <li><a href="#" class="sidenav-link">アクセス</a></li>
+                    <li><a href="#" class="sidenav-link">会社概要</a></li>
+                    <li><a href="#" class="sidenav-link">お問い合わせ</a></li>
+                    <li><a href="#" class="sidenav-link" name="theme-switch" onclick="changeTheme();"><i class="material-icons">dark_mode</i></a></li>
                 </ul>
-            </li>
-            <li><a href="">塗料の販売</a></li>
-            <li><a href="">アクセス</a></li>
-            <li><a href="">会社概要</a></li>
-            <li><a href="">お問い合わせ</a></li>
-            <li><a href="#" name="theme-switch" onclick="changeTheme();"><i class="material-icons">dark_mode</i></a></li>
-        </ul>
+            </nav>
+        </div>
+        <div id="focus-trap" tabindex="0"></div>
     </header>
     <main>
         <div class="slider">
             <ul class="slides">
                 <li name="slide-name">
-                    <img src="./asset/img/test01.png"  alt="">
+                    <img src="./asset/img/ニシ自動車鈑金ロゴ.png"  alt="">
                     <div class="caption left-align">
                         <h3 class="top-text">Car Painter<br>
                             Nishi Automobile Sheet Metal</h3>
@@ -295,8 +202,11 @@
         <div class="what-block container">
             <section id="what-is" class="what-is" >
                 <div class="what-title">
-                    <h4>What's ニシ自動車鈑金?</h4>
-                    <img src="./asset/img/pose_douzo_annai_businessman.png"" alt="人">
+                    <h4>ニシ自動車鈑金ってどんなお店？</h4>
+                    <div class="what-title-flex">
+                        <img src="./asset/img/23301420_s.jpg" alt="人">
+                        <img src="./asset/img/23452.png" alt="？">
+                    </div>
                 </div>
                 <ul>
                     <li>
@@ -304,7 +214,7 @@
                             <h5>鈑金</h5>
                             <p>自動車の曲がりや凹みを矯正し、きれいにする</p>
                         </div>
-                        <img src=" alt="鈑金写真">
+                        <img src="" alt="鈑金写真">
                     </li>
                     <li class="flex-reverse">
                         <div>
@@ -406,7 +316,7 @@
     ></script> -->
     <!-- <script src="./asset/bxslider/js/jquery.bxslider.js"></script> -->
     <script src="./asset/aos-master/dist/aos.js"></script>
-    <script src="./asset/materialize/js/materialize.js"></script>
+    <!-- <script src="./asset/materialize/js/materialize.js"></script> -->
     <script src="./asset/js/custom.js"></script>
 
     <!-- [TASKS] ドメインを取得した後にやる -->

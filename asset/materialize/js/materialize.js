@@ -6277,8 +6277,11 @@ const _defaults = {
 
 class Sidenav extends component_1.Component {
     constructor(el, options) {
+        console.log("bbb");
         super(el, options, Sidenav);
+        console.log("ccc");
         this._handleDragTargetDrag = (e) => {
+            console.log("test1");
             // Check if draggable
             if (!this.options.draggable || this._isCurrentlyFixed() || this._verticallyScrolling) {
                 return;
@@ -6317,6 +6320,7 @@ class Sidenav extends component_1.Component {
             this._overlay.style.opacity = this.percentOpen.toString();
         };
         this._handleDragTargetRelease = () => {
+            console.log("test2");
             if (this.isDragged) {
                 if (this.percentOpen > 0.2) {
                     this.open();
@@ -6329,6 +6333,7 @@ class Sidenav extends component_1.Component {
             }
         };
         this._handleCloseDrag = (e) => {
+            console.log("test3");
             if (this.isOpen) {
                 // Check if draggable
                 if (!this.options.draggable || this._isCurrentlyFixed() || this._verticallyScrolling) {
@@ -6361,6 +6366,7 @@ class Sidenav extends component_1.Component {
             }
         };
         this._handleCloseRelease = () => {
+            console.log("test4");
             if (this.isOpen && this.isDragged) {
                 if (this.percentOpen > 0.8) {
                     this._animateIn();
@@ -6374,12 +6380,14 @@ class Sidenav extends component_1.Component {
         };
         // Handles closing of Sidenav when element with class .sidenav-close
         this._handleCloseTriggerClick = (e) => {
+            console.log("test5");
             const closeTrigger = e.target.closest('.sidenav-close');
             if (closeTrigger && !this._isCurrentlyFixed()) {
                 this.close();
             }
         };
         this._handleWindowResize = () => {
+            console.log("test6");
             // Only handle horizontal resizes
             if (this.lastWindowWidth !== window.innerWidth) {
                 if (window.innerWidth > 992) {
@@ -6396,6 +6404,7 @@ class Sidenav extends component_1.Component {
          * Opens Sidenav.
          */
         this.open = () => {
+            console.log("test6");
             if (this.isOpen === true)
                 return;
             this.isOpen = true;
@@ -6429,6 +6438,7 @@ class Sidenav extends component_1.Component {
          * Closes Sidenav.
          */
         this.close = () => {
+            console.log("test7");
             if (this.isOpen === false)
                 return;
             this.isOpen = false;
@@ -6452,6 +6462,7 @@ class Sidenav extends component_1.Component {
                 }
             }
         };
+        console.log("aaa");
         this.el.M_Sidenav = this;
         this.options = Object.assign(Object.assign({}, Sidenav.defaults), options);
         this.id = this.el.id;
@@ -6477,12 +6488,15 @@ class Sidenav extends component_1.Component {
      * @param options Component options.
      */
     static init(els, options = {}) {
+        console.log("init");
         return super.init(els, options, Sidenav);
     }
     static getInstance(el) {
+        console.log("getInstance");
         return el.M_Sidenav;
     }
     destroy() {
+        console.log("destoroy");
         this._removeEventHandlers();
         this._enableBodyScrolling();
         this._overlay.parentNode.removeChild(this._overlay);
@@ -6495,12 +6509,14 @@ class Sidenav extends component_1.Component {
         }
     }
     _createOverlay() {
+        console.log("createOverlay");
         this._overlay = document.createElement('div');
         this._overlay.classList.add('sidenav-overlay');
         this._overlay.addEventListener('click', this.close);
         document.body.appendChild(this._overlay);
     }
     _setupEventHandlers() {
+        console.log("setupEventHandlers");
         if (Sidenav._sidenavs.length === 0) {
             document.body.addEventListener('click', this._handleTriggerClick);
         }
@@ -6518,6 +6534,7 @@ class Sidenav extends component_1.Component {
         }
     }
     _removeEventHandlers() {
+        console.log("removeEventHandlers");
         if (Sidenav._sidenavs.length === 1) {
             document.body.removeEventListener('click', this._handleTriggerClick);
         }
@@ -6534,6 +6551,7 @@ class Sidenav extends component_1.Component {
         }
     }
     _handleTriggerClick(e) {
+        console.log("handleTriggerClick");
         const trigger = e.target.closest('.sidenav-trigger');
         if (e.target && trigger) {
             const sidenavId = utils_1.Utils.getIdFromTrigger(trigger);
@@ -6546,6 +6564,7 @@ class Sidenav extends component_1.Component {
     }
     // Set variables needed at the beginning of drag and stop any current transition.
     _startDrag(e) {
+        console.log("startDrag");
         const clientX = e.targetTouches[0].clientX;
         this.isDragged = true;
         this._startingXpos = clientX;
@@ -6560,6 +6579,7 @@ class Sidenav extends component_1.Component {
     }
     //Set variables needed at each drag move update tick
     _dragMoveUpdate(e) {
+        console.log("dragMoveUpdate");
         const clientX = e.targetTouches[0].clientX;
         const currentScrollTop = this.isOpen ? this.el.scrollTop : utils_1.Utils.getDocumentScrollTop();
         this.deltaX = Math.abs(this._xPos - clientX);
@@ -6571,23 +6591,28 @@ class Sidenav extends component_1.Component {
         }
     }
     _setupClasses() {
+        console.log("setupClasses");
         if (this.options.edge === 'right') {
             this.el.classList.add('right-aligned');
             this.dragTarget.classList.add('right-aligned');
         }
     }
     _removeClasses() {
+        console.log("removeClasses");
         this.el.classList.remove('right-aligned');
         this.dragTarget.classList.remove('right-aligned');
     }
     _setupFixed() {
+        console.log("setupFixed");
         if (this._isCurrentlyFixed())
             this.open();
     }
     _isCurrentlyFixed() {
+        console.log("isCurrentlyFixed");
         return this.isFixed && window.innerWidth > 992;
     }
     _createDragTarget() {
+        console.log("createDragTarget");
         const dragTarget = document.createElement('div');
         dragTarget.classList.add('drag-target');
         dragTarget.style.width = this.options.dragTargetWidth;
@@ -6595,16 +6620,20 @@ class Sidenav extends component_1.Component {
         this.dragTarget = dragTarget;
     }
     _preventBodyScrolling() {
+        console.log("preventBodyScrolling");
         document.body.style.overflow = 'hidden';
     }
     _enableBodyScrolling() {
+        console.log("enableBodyScrolling");
         document.body.style.overflow = '';
     }
     _animateIn() {
+        console.log("animateIn");
         this._animateSidenavIn();
         this._animateOverlayIn();
     }
     _animateSidenavIn() {
+        console.log("animateSidenavIn");
         let slideOutPercent = this.options.edge === 'left' ? -1 : 1;
         if (this.isDragged) {
             slideOutPercent =
@@ -6627,6 +6656,7 @@ class Sidenav extends component_1.Component {
         });
     }
     _animateOverlayIn() {
+        console.log("animateOverlayIn");
         let start = 0;
         if (this.isDragged) {
             start = this.percentOpen;
@@ -6643,10 +6673,12 @@ class Sidenav extends component_1.Component {
         });
     }
     _animateOut() {
+        console.log("animateOut");
         this._animateSidenavOut();
         this._animateOverlayOut();
     }
     _animateSidenavOut() {
+        console.log("animateSidenavOut");
         const endPercent = this.options.edge === 'left' ? -1 : 1;
         let slideOutPercent = 0;
         if (this.isDragged) {
@@ -6670,6 +6702,7 @@ class Sidenav extends component_1.Component {
         });
     }
     _animateOverlayOut() {
+        console.log("animateOverlayOut");
         animejs_1.default.remove(this._overlay);
         (0, animejs_1.default)({
             targets: this._overlay,
